@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookclub Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Book Discussion Survey Form</h1>
+      <p id="description">Thanks for joining this month's book discussion!</p>
+      <form id="survey-form">
+        <div class="form-elements">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" name="name" class="form-input-box" placeholder="Enter your name" required />
+        </div>
+        <div class="form-elements">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" name="email" type="email" class="form-input-box" placeholder="Enter your email" required />
+        </div>
+        <div class="form-elements">
+          <label id="number-label" for="number">
+            How many books do you usually read in a month?
+          </label>
+          <input
+            id="number"
+            name="books"
+            type="number"
+            class="form-input-box"
+            min="0"
+            max="60"
+            placeholder="Number of books"
+          />
+        </div>
+        <div class="form-elements">
+          <p>What are your favorite genres?</p>
+          <div class="genres">
+            <label><input name="genre" type="checkbox" value="chick-lit"/>Chick LIt</label>
+            <label><input name="genre" type="checkbox"value="classics"/>Classics</label>
+            <label><input name="genre" type="checkbox"value="crime"/>Crime</label>
+            <label><input name="genre" type="checkbox" value="fantasy"/>Fantasy</label>
+            <label><input name="genre" type="checkbox" value="graphic"/>Graphic Novels</label>
+            <label><input name="genre" type="checkbox" value="historical"/>Historical Fiction</label>
+            <label><input name="genre" type="checkbox" value="horror"/>Horror</label>
+            <label><input name="genre" type="checkbox" value="humor"/>Humor</label>
+            <label><input name="genre" type="checkbox" value="mystery"/>Mystery</label>
+            <label><input name="genre" type="checkbox"value="non-fic"/>Non-Fiction</label>
+            <label><input name="genre" type="checkbox" value="paranormal"/>Paranormal</label>
+            <label><input name="genre" type="checkbox" value="poetry"/>Poetry</label>
+            <label><input name="genre" type="checkbox" value="romance"/>Romance</label>
+            <label><input name="genre" type="checkbox"value="sci-fi"/>Science Fiction</label>
+            <label><input name="genre" type="checkbox" value="thriller"/>Thriller</label>
+            <label><input name="genre" type="checkbox" value="ya"/>Young Adult</label>
+            <label><input name="genre" type="checkbox" value="others"/>Others</label>
+          </div>
+        </div>
+        <div class="form-elements">
+          <p>What book would you like to read for next month's discussion?</p>
+          <select id="dropdown" class="form-input-box">
+            <option value="ove">A Man Called Ove by Fredrik Backman</option>
+            <option value="tazaki">
+              Colorless Tsukuru Tazaki and His Years of Pilgrimage by Haruki Murakami
+            </option>
+            <option value="eleanor">
+              Eleanor Oliphant is Completely Fine by Gail Honeyman
+            </option>
+          </select>
+        </div>
+        <div class="form-elements">
+          <p>Will you attend next month's discussion?</p>
+          <label><input name="attend" type="radio" value="yes"/>Yes</label>
+          <label><input name="attend" type="radio"value="maybe"/>Maybe</label>
+          <label><input name="attend" type="radio" value="no"/>No</label>
+        </div>
+        <div class="form-elements">
+          <label id="email-label">Comments/Suggestions</label>
+          <textarea id="comments" rows="4" class="form-input-box" placeholder="Enter your comments here..."></textarea>
+        </div>
+        <div class="form-elements">
+          <button type="submit" id="submit">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
